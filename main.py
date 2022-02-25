@@ -69,7 +69,7 @@ class Comment(db.Model):
     text = db.Column(db.Text, nullable=False)
 
 
-db.create_all()
+# db.create_all()
 
 
 def admin_only(f):
@@ -244,6 +244,28 @@ def delete_post(post_id):
     db.session.delete(post_to_delete)
     db.session.commit()
     return redirect(url_for('get_all_posts'))
+
+
+# New route different web page (portfolio)
+@app.route("/rahul/portfolio", methods=['GET', 'POST'])
+def portfolio():
+    form = ContactForm()
+    if form.validate_on_submit():
+        name = form.name.data
+        email = form.email.data
+        phone = form.phone.data
+        message = form.message.data
+        my_email = os.environ.get("MY_EMAIL")
+        my_password = os.environ.get("MY_PASSWORD")
+        my_email_2 = os.environ.get("MY_EMAIL_2")
+        with smtplib.SMTP("smtp.mail.yahoo.com") as connection:
+            connection.starttls()
+            connection.login(user=my_email, password=my_password)
+            connection.sendmail(from_addr=my_email, to_addrs=my_email_2,
+                                msg=f"subject:Data\n\n {name}:{email}:{phone}:{message}")
+        flash("Message sent successfully!")
+        return redirect(url_for('portfolio'))
+    return render_template("portfolio.html", form=form)
 
 
 if __name__ == "__main__":

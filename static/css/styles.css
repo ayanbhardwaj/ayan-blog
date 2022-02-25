@@ -1,0 +1,85 @@
+/* Header */
+
+.background-img {
+  height: 768px;
+}
+
+.intro {
+  padding-top: 350px;
+}
+
+.greeting {
+  font-size: 3.0rem;
+  font-family: cursive;
+  color: #000000;
+  font-weight: bolder;
+}
+
+.profession {
+  font-size: 2.5rem;
+  font-family: 'Sacramento', cursive;
+  color: #000000;
+  font-weight: bolder;
+
+}
+
+.buttons{
+  padding-top: 80px;
+}
+
+/* About Section */
+
+.about {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.section-title {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.basic-details {
+  padding-top: 30px;
+}
+.notes {
+  padding-top: 50px;
+}
+
+/* Resume */
+.Summary {
+  padding-top: 50px;
+}
+
+.resume {
+  text-align: justify;
+}
+
+/* skills */
+.skills {
+  margin-bottom: 50px;
+}
+
+/* contact */
+.contact {
+  text-align: center;
+}
+
+/* Footer */
+
+.footer {
+  background-color: #66BFBF;
+}
+
+.footer-container {
+  text-align: center;
+  padding: 50px;
+}
+
+.progress-bar-animated {
+  @if $enable-transitions {
+    @keyframes progress-bar-stripes {
+      0% { background-position-x: $progress-height; }
+    }
+  }
+}
