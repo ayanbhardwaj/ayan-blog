@@ -1,23 +1,30 @@
 /* Header */
 
+.background-img {
+  height: 768px;
+}
+
 .intro {
-  padding-top: 50%;
+  padding-top: 350px;
 }
 
 .greeting {
+  font-size: 3.0rem;
   font-family: cursive;
   color: #000000;
   font-weight: bolder;
 }
 
 .profession {
+  font-size: 2.5rem;
   font-family: 'Sacramento', cursive;
   color: #000000;
   font-weight: bolder;
+
 }
 
 .buttons{
-  padding-top: 30%;
+  padding-top: 150px;
 }
 
 /* About Section */
