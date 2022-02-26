@@ -5,7 +5,7 @@
 }
 
 .intro {
-  padding-top: 350px;
+  padding-top: 300px;
 }
 
 .greeting {
@@ -24,7 +24,13 @@
 }
 
 .buttons{
-  padding-top: 150px;
+  padding-top: 265px;
+}
+
+@media (max-width: 1028px) {
+  .buttons{
+  padding-top: 200px;
+}
 }
 
 /* About Section */
@@ -60,15 +66,27 @@
   margin-bottom: 50px;
 }
 
+.progress-bar-animated {
+  @if $enable-transitions {
+    @keyframes progress-bar-stripes {
+      0% { background-position-x: $progress-height; }
+    }
+  }
+}
+
 /* contact */
 .contact-me {
   text-align: center;
+  padding-bottom: 20px;
 }
 
 .contact {
   padding-bottom: 50px;
 }
 
+.contact-msg {
+  text-align: left;
+}
 /* Footer */
 
 .footer {
@@ -80,10 +98,4 @@
   padding: 50px;
 }
 
-.progress-bar-animated {
-  @if $enable-transitions {
-    @keyframes progress-bar-stripes {
-      0% { background-position-x: $progress-height; }
-    }
-  }
-}
+
