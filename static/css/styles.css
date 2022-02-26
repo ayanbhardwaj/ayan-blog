@@ -24,12 +24,12 @@
 }
 
 .buttons{
-  padding-top: 265px;
+  padding-top: 210px;
 }
 
 @media (max-width: 1028px) {
   .buttons{
-  padding-top: 215px;
+  padding-top: 170px;
 }
 }
 
