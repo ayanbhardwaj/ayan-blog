@@ -1,11 +1,13 @@
-{% extends "bootstrap/base.html" %}
 {% import "bootstrap/wtf.html" as wtf %}
-{% block doc %}
 <!DOCTYPE html>
 <html>
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
   <title>Rahul Bhardwaj</title>
   <link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
   <!-- Google Fonts -->
@@ -27,7 +29,7 @@
     <img src="{{ url_for('static', filename='images/rahul.jpg') }}" class="card-img background-img" alt="...">
     <div class="card-img-overlay">
       <div class="row">
-        <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="col-lg-10 col-md-10 mx-auto">
           <div class="text-center intro">
             <h1 class="greeting">Rahul Bhardwaj</h1>
             <h2 class="profession">I'm Executive Assistant & Python developer</h2>
@@ -45,7 +47,7 @@
 
   <!-- About Section -->
   <section id="about" class="about">
-    <div class="container aos-init aos-animate" data-aos="fade-up">
+    <div class="container">
 
       <div class="section-title">
         <h2><u>About</u></h2>
@@ -271,7 +273,7 @@
   <footer class="footer">
     <div class="container footer-container">
       <div class="row">
-        <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="col-lg-10 col-md-10 mx-auto">
           <ul class="list-inline text-center">
             <li class="list-inline-item">
               <a href="#">
@@ -314,4 +316,3 @@
 </body>
 
 </html>
-{% endblock %}
