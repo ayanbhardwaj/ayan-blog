@@ -27,7 +27,7 @@
   padding-top: 210px;
 }
 
-@media (max-width: 1028px) {
+@media (max-width: 768px) {
   .buttons{
   padding-top: 170px;
 }
@@ -74,6 +74,36 @@
   }
 }
 
+/* testimonials */
+
+.carousel {
+  background-color: #ef8172;
+  height: 500px;
+}
+
+.carousel-item {
+  padding: 120px 150px 0 150px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .carousel-item {
+  padding: 140px 50px 0 50px;;
+}
+}
+
+.testimonial-image {
+  width: 12%;
+  border-radius: 100%;
+}
+
+@media (max-width: 768px) {
+  .testimonial-image {
+  width: 20%;
+  border-radius: 100%;
+}
+}
+
 /* contact */
 .contact-me {
   text-align: center;
@@ -97,5 +127,4 @@
   text-align: center;
   padding: 50px;
 }
-
 
